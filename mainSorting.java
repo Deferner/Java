@@ -30,13 +30,13 @@ public class mainSorting {
 				 		 runCal(new ShellSort(objInput.getNumber(),no,choice4));
 				 		 System.exit(0);
 				 		 break;
-				}//end switch
+				}//end switch(choice1)
 		case 2 : InputStringClass objInput2 = new InputStringClass();
 				 objInput2.runInputString(no);
 				 string1 = objInput2.get_String();
 				 SortString objInput3 = new SortString();
 				 objInput3.sort_string(string1,no,choice4);
-		}
+		}//end switch(type)
 	}//end main method
 	
 	static void runCal(Operand obj) {

@@ -80,7 +80,7 @@ class EnterTypeOfSorting { //for select character sorting of number sorting
 					JOptionPane.showMessageDialog(null,"Enter Number 1 or 2 Only!!","Warning",JOptionPane.PLAIN_MESSAGE);
 					check = false;
 				}//end try
-			}//end try
+			}//end do
 			catch(NumberFormatException e) {
 				JOptionPane.showMessageDialog(null,"Enter NUMBER Only!!","Warning",JOptionPane.PLAIN_MESSAGE);
 				check = false;
