@@ -1,4 +1,4 @@
-import java.text.DecimalFormat;
+import java.text.*;
 
 import javax.swing.*;
 public class mainInterest {
