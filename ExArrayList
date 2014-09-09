@@ -1,6 +1,6 @@
 import java.text.*;
 import java.util.*;
-public class ExArrayList {
+public class Array {
   public static void main(String [] args) {
     //สร้าง array list ของ Object "Employee"
     ArrayList<Employee> staff = new ArrayList<Employee>();
@@ -29,7 +29,7 @@ class Employee {
   public Employee(String n,double s, int year, int month, int day) {
     name = n;
     salary = s;
-    GregorianCalendar calendar = new GergorianCalendarCalaendar(year,month - 1,day);
+    GregorianCalendar calendar = new GregorianCalendar(year,month - 1,day);
     hireDay = calendar.getTime();
   }
   
@@ -37,7 +37,7 @@ class Employee {
     return name;
   }
   
-  public double getSaraly() {
+  public double getSalary() {
     return salary;
   }
   
