@@ -1,0 +1,30 @@
+import java.text.*;
+import java.util.*;
+public class ExArrayList {
+  public static void main(String [] args) {
+    //สร้าง array list ของ Object "Employee"
+    ArrayList<Employee> staff = new ArrayList<Employee>();
+    
+    staff.add(new Employee("First TheOne",25000,1976,10,30));
+    staff.add(new Employee("Second TheTwo",16000,1980,8,20));
+    staff.add(new Employee("Third TheThree",55000,1979,3,26));
+    
+    //เพิ่มเงินเดือนให้ 5%
+    for(Employee emp : staff)
+      emp.raiseSalary(5);
+      
+    NumberFormat formatNumber = NumberFormat.getNumberInstance();
+    formatNumber.setMaximumFractionDigits(2);
+    formatNumber.setMinimumFractionDigits(2);
+    
+    //สั่งพิมพ์ข้อมูลพนักงาน
+    System.out.println("Name-SureName     \tSalary     \tStart working");
+    for(Employee emp : staff) {
+      System.out.println(emp.getName() +"     \t" +formatNumber.format(emp.getSalary()) +"     \t" +emp.getHireDay());
+    }
+  }//end method main
+}//end class ExArrayList
+
+class Employee {
+
+}
