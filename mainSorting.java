@@ -79,13 +79,13 @@ class EnterTypeOfSorting { //for select character sorting of number sorting
 				if(input10 < 1 || input10 > 2) {
 					JOptionPane.showMessageDialog(null,"Enter Number 1 or 2 Only!!","Warning",JOptionPane.PLAIN_MESSAGE);
 					check = false;
-				}//end try
-			}//end do
+				}//end if
+			}//end try
 			catch(NumberFormatException e) {
 				JOptionPane.showMessageDialog(null,"Enter NUMBER Only!!","Warning",JOptionPane.PLAIN_MESSAGE);
 				check = false;
 			}//end catch
-		}while(!check);
+		}while(!check); //end do
 		return input10;
 	}//end getSelectChoice method
 	
@@ -224,8 +224,7 @@ class InsertionSort extends Operand {
 			int temp = input6[i];
 			int j;
 			for(j = i-1; j >= 0; j--) {
-				if(input6[j] <= temp)
-					break;
+				if(input6[j] <= temp) break;
 				input6[j+1] = input6[j];
 			}
 			input6[j+1] = temp;
